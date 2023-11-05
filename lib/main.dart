@@ -45,9 +45,10 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.lightBlue,
-        title: Text(widget.title),
+        backgroundColor: Colors.white,
+        title: Text(widget.title,style: const TextStyle(color: Colors.lightBlue),),
       ),
+      drawer: const Drawer(),
       body:const Center(
         child: WordList(),
       )// This trailing comma makes auto-formatting nicer for build methods.
