@@ -9,7 +9,7 @@ class Verb {
   final String inAmharic;
   final String family;
   Verb(this.word, this.inAmharic, this.partOfSpeech, this.family);
-// 3.
+
   factory Verb.fromJson(Map<String, dynamic> json) => _$VerbFromJson(json);
   Map<String, dynamic> toJson() => _$VerbToJson(this);
 }
