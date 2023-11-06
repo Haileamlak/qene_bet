@@ -24,6 +24,7 @@ class _WordListState extends State<WordList> {
   void getWords() async {
     final words = await loadAsset();
 
+
     List<dynamic> jsonWords = jsonDecode(words);
     verbs = jsonWords.map((value) => Verb.fromJson(value)).toList();
     setState(() {});
