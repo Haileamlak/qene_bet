@@ -39,6 +39,7 @@ dependencies:
   json_annotation: ^4.8.1
   build_runner: ^2.4.6
   google_fonts: ^6.1.0
+  flutter_opendroneid: ^0.15.2
 
 dev_dependencies:
   flutter_test:

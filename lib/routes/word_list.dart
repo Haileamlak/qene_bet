@@ -24,7 +24,6 @@ class _WordListState extends State<WordList> {
   void getWords() async {
     final words = await loadAsset();
 
-
     List<dynamic> jsonWords = jsonDecode(words);
     verbs = jsonWords.map((value) => Verb.fromJson(value)).toList();
     setState(() {});
@@ -47,11 +46,13 @@ class _WordListState extends State<WordList> {
             title: RichText(
               text: TextSpan(
                 text: verbs[index].word,
-                style: GoogleFonts.abyssinicaSil(fontSize: 16,color: Colors.lightBlue),
+                style: GoogleFonts.abyssinicaSil(
+                    fontSize: 16, color: Colors.lightBlue),
                 children: [
                   TextSpan(
                     text: ' (${verbs[index].family})',
-                    style:  GoogleFonts.abyssinicaSil(fontSize: 10, color: Colors.black45),
+                    style: GoogleFonts.abyssinicaSil(
+                        fontSize: 10, color: Colors.black45),
                   ),
                 ],
               ),
