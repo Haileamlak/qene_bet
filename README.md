@@ -1,6 +1,6 @@
 # qene_bet
 
-Geez to Amharic dictionary
+Geez to Amharic dictionary 
 
 ## Getting Started
 
